@@ -4,6 +4,7 @@
       {{ . }}
     </div>
   {{ end }}
+  {{ partial "leftcol.html" . }}
   <div class="posts">
     {{ range .Paginator.Pages }}
       <article class="post on-list">
