@@ -5,7 +5,7 @@
     </div>
   {{ end }}
   {{ partial "leftcol.html" . }}
-  <div class="posts">
+  <div class="posts col">
     {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
     {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
 
