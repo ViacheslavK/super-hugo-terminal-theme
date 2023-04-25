@@ -1,23 +1,26 @@
 <footer class="footer">
   <div class="footer__inner">
-    {{ if $.Site.Copyright }}
+    <span>
+      {{ if $.Site.Copyright }}
       <div class="copyright copyright--user">
         <span>{{ $.Site.Copyright | safeHTML }}</span>
-    {{ else }}
-      <div class="copyright">
-        <span>© 2013 - {{ now.Year }} Powered by <a href="http://gohugo.io">Hugo Static Generator</a> and using <a href="https://github.com/panr/hugo-theme-terminal">Terminal</a>-based theme</span>
-    {{ end }}
-      </div>
-      <div class="d-flex flex-row">
-        <div class="m-1">Telegram</div>
-        <div class="m-1">Youtube</div>
-        <div class="m-1">Facebook</div>
-        <div class="m-1">Twitter</div>
-        <div class="m-1">Pinterest</div>
-        <div class="m-1">Linkedin</div>
-        <div class="m-1">Instagram</div>
-        <div class="m-1">RSS Feed</div>
-      </div>
+        {{ else }}
+        <div class="copyright">
+          <span class="m-2">© 2013 - {{ now.Year }} Powered by <a href="http://gohugo.io">Hugo Static Generator</a> and using <a
+              href="https://github.com/panr/hugo-theme-terminal">Terminal</a>-based theme</span>
+          {{ end }}
+        </div>
+        <div class="d-flex flex-row">
+          <div class="m-2">Telegram</div>
+          <div class="m-2">Youtube</div>
+          <div class="m-2">Facebook</div>
+          <div class="m-2">Twitter</div>
+          <div class="m-2">Pinterest</div>
+          <div class="m-2">Linkedin</div>
+          <div class="m-2">Instagram</div>
+          <div class="m-2">RSS Feed</div>
+        </div>
+    </span>
   </div>
 </footer>
 
